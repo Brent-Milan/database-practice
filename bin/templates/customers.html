@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Database Exercise Website</title>
+</head>
+<body>
+<p> Database JPA/Spring </p> 
+<h1>Things Are Happening:</h1>
+<a th:each="customer: ${customersAsCollection}">
+<div th:text="${customer.firstName}"></div></a>
+  
+</body>
+</html>
